@@ -9,6 +9,20 @@
 <body>
 
     <div class="auth-box">
+        
+        <!-- BLOQUE PARA MOSTRAR EL ERROR DE DATOS INVÁLIDOS -->
+        <%
+            String error = request.getParameter("error");
+            if (error != null && error.equals("1")) {
+        %>
+            <div class="error-message">
+                Datos inválidos. Verifica tu usuario y contraseña.
+            </div>
+        <%
+            }
+        %>
+        <!-- FIN DEL BLOQUE DE ERROR -->
+
         <h1>&gt; Login_Sistema</h1>
         <p>Ingresa tus credenciales para acceder.</p>
         

@@ -81,3 +81,15 @@ p {
 .auth-links a:hover {
     text-decoration: underline;
 }
+
+/* Estilo para la alerta de error en los formularios de autenticación */
+.error-message {
+    color: #f85149;
+    background: rgba(248, 81, 73, 0.1);
+    border: 1px solid #f85149;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
